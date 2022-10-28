@@ -4,6 +4,7 @@ namespace App\Nova;
 
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -43,7 +44,7 @@ class Vaccine extends Resource
         return [
             ID::make()->asBigInt()->sortable(),
 
-            Text::make('Vaers ID', 'vaers_id')
+            Number::make('Vaers ID', 'vaers_id')
                 ->sortable()
                 ->nullable()
                 ->default(null),

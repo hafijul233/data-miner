@@ -28,8 +28,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
            PatientSeeder::class,
-//            SymptomSeeder::class,
-//            VaccineSeeder::class
+            SymptomSeeder::class,
+            VaccineSeeder::class
         ]);
     }
 }
